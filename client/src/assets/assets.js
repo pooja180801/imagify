@@ -18,6 +18,7 @@ import cross_icon from './cross_icon.svg'
 import star_group from './star_group.png'
 import credit_star from './credit_star.svg'
 import profile_icon from './profile_icon.png'
+import user_icon from './user_icon.svg'
 
 export const assets = {
     logo,
@@ -34,7 +35,8 @@ export const assets = {
     cross_icon,
     star_group,
     credit_star,
-    profile_icon
+    profile_icon,
+    user_icon
 }
 
 export const stepsData = [
@@ -74,7 +76,7 @@ export const testimonialsData = [
         image:profile_img_1,
         name:'Donald Jackman',
         role:' Graphic Designer',
-        stars:5,
+        stars:4,
         text:`I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`
     },
 ]
