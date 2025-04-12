@@ -1,44 +1,85 @@
-Imagify
-Imagify is a full-stack web application built using the MERN stack (MongoDB, Express, React, Node.js). It allows users to convert text into stunning images using Stability AI's text-to-image generation. The platform also integrates Stripe for secure payments on premium image generation features.
+# Imagify - Text-to-Image Generation with MERN and Stripe
 
-🔧 Tech Stack
-Frontend: React, Tailwind CSS
+Imagify is a full-stack web application built using the MERN stack (MongoDB, Express, React, Node.js). It empowers users to convert textual descriptions into visually stunning images using Stability AI's powerful text-to-image generation capabilities. The platform also features seamless integration with Stripe for secure payments, enabling access to premium image generation features.
 
-Backend: Node.js, Express
+![Imagify Screenshot (Replace with your actual screenshot)](./path/to/your/screenshot.png)  
+*Replace `./path/to/your/screenshot.png` with a relevant screenshot of your app.*
 
-Database: MongoDB
+## 🔧 Tech Stack
 
-Payment: Stripe
+* **Frontend:** React, Tailwind CSS
+* **Backend:** Node.js, Express
+* **Database:** MongoDB
+* **Payment:** Stripe
+* **Authentication:** JWT (JSON Web Tokens)
+* **AI Integration:** Stability AI
 
-Authentication: JWT
+## 🚀 Running the Application
 
-AI Integration: Stability AI
+To get Imagify up and running on your local machine, follow these steps:
 
-🚀 Running the Application
-1. Clone the repository
-bash
-Copy
-Edit
-git clone <repo-url>
-2. Install dependencies for the frontend
-bash
-Copy
-Edit
-cd client
-npm install
-3. Run the frontend
-bash
-Copy
-Edit
-npm run dev
-4. Install dependencies for the backend
-bash
-Copy
-Edit
-cd server
-npm install
-5. Run the backend server
-bash
-Copy
-Edit
-npm run server
+1.  **Clone the Repository:**
+
+    ```bash
+    git clone <YOUR_REPOSITORY_URL>
+    ```
+
+    *Replace `<YOUR_REPOSITORY_URL>` with your actual GitHub repository URL.*
+
+2.  **Install Frontend Dependencies:**
+
+    ```bash
+    cd client
+    npm install
+    ```
+
+3.  **Run the Frontend Development Server:**
+
+    ```bash
+    npm run dev
+    ```
+
+    *This will start the React development server. Typically, it runs on `http://localhost:5173`. Check your console for the exact address.*
+
+4.  **Install Backend Dependencies:**
+
+    ```bash
+    cd ../server
+    npm install
+    ```
+
+5.  **Set up Environment Variables:**
+
+    * Create a `.env` file in the `server` directory.
+    * Add the following environment variables, replacing the placeholders with your actual values:
+
+        ```
+        PORT=4000
+        MONGODB_URI=<YOUR_MONGODB_CONNECTION_STRING>
+        JWT_SECRET=<YOUR_JWT_SECRET>
+        STRIPE_SECRET_KEY=<YOUR_STRIPE_SECRET_KEY>
+        STABILITY_AI_API_KEY=<YOUR_STABILITY_AI_API_KEY>
+        ```
+
+    * **Important:** Keep your `.env` file secure and do not commit it to your repository. Add `.env` to your `.gitignore` file.
+
+6.  **Run the Backend Server:**
+
+    ```bash
+    npm run server
+    ```
+
+    *This will start the Node.js/Express server. Typically, it runs on `http://localhost:4000`.*
+
+7.  **Access the Application:**
+
+    * Open your browser and navigate to the frontend URL (e.g., `http://localhost:5173`).
+
+## 🤝 Contributing
+
+Contributions are welcome! If you'd like to contribute, please follow these steps:
+
+1.  Fork the repository.
+2.  Create a new branch for your feature or bug fix.
+3.  Make your changes.
+4.  Submit a pull request.
