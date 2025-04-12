@@ -1,5 +1,5 @@
 Imagify
-Imagify is a full-stack web application built using the MERN stack (MongoDB, Express, React, Node.js). It converts text into images using Stability AI's text-to-image generation. The app also integrates Stripe for secure payments on premium features.
+Imagify is a full-stack web application built using the MERN stack (MongoDB, Express, React, Node.js). It allows users to convert text into stunning images using Stability AI's text-to-image generation. The platform also integrates Stripe for secure payments on premium image generation features.
 
 🔧 Tech Stack
 Frontend: React, Tailwind CSS
@@ -15,13 +15,30 @@ Authentication: JWT
 AI Integration: Stability AI
 
 🚀 Running the Application
-Clone the repository: git clone <repo-url>
-
-Navigate to the client folder and install dependencies: cd client && npm install
-
-Run the frontend: npm run dev
-
-Navigate to the server folder and install dependencies: cd server && npm install
-
-Run the backend server: npm run server
-
+1. Clone the repository
+bash
+Copy
+Edit
+git clone <repo-url>
+2. Install dependencies for the frontend
+bash
+Copy
+Edit
+cd client
+npm install
+3. Run the frontend
+bash
+Copy
+Edit
+npm run dev
+4. Install dependencies for the backend
+bash
+Copy
+Edit
+cd server
+npm install
+5. Run the backend server
+bash
+Copy
+Edit
+npm run server
