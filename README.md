@@ -2,9 +2,6 @@
 
 Imagify is a full-stack web application built using the MERN stack (MongoDB, Express, React, Node.js). It empowers users to convert textual descriptions into visually stunning images using Stability AI's powerful text-to-image generation capabilities. The platform also features seamless integration with Stripe for secure payments, enabling access to premium image generation features.
 
-![Imagify Screenshot (Replace with your actual screenshot)](./path/to/your/screenshot.png)  
-*Replace `./path/to/your/screenshot.png` with a relevant screenshot of your app.*
-
 ## 🔧 Tech Stack
 
 * **Frontend:** React, Tailwind CSS
@@ -53,13 +50,34 @@ To get Imagify up and running on your local machine, follow these steps:
     * Create a `.env` file in the `server` directory.
     * Add the following environment variables, replacing the placeholders with your actual values:
 
+       ```
+    PORT=4000
+    MONGODB_URL=your_mongodb_connection_string
+    JWT_SECRET=your_jwt_secret_string
+    STRIPE_SECRET_KEY=your_stripe_secret_key
+    STABILITY_API_KEY =your_stability_ai_api_key
+    FRONTEND_URL=your_frontend_url
+    
+    ```
+
+    * **`PORT`:** The port number the backend server will listen on.
+    * **`MONGODB_URL`:** Your MongoDB connection string.
+    * **`JWT_SECRET`:** A secret string used for JWT authentication.
+    * **`STRIPE_SECRET_KEY`:** Your Stripe secret key for payment processing.
+    * **`STABILITY_API_KEY`:** Your Stability AI API key for image generation.
+    * **`FRONTEND_URL`:** Your front end URL.
+
+    * **Frontend (Client):**
+        * Create a `.env` file in the `client` directory.
+        * Add the following environment variable:
+
         ```
-        PORT=4000
-        MONGODB_URI=<YOUR_MONGODB_CONNECTION_STRING>
-        JWT_SECRET=<YOUR_JWT_SECRET>
-        STRIPE_SECRET_KEY=<YOUR_STRIPE_SECRET_KEY>
-        STABILITY_AI_API_KEY=<YOUR_STABILITY_AI_API_KEY>
+        VITE_BACKEND_URL=http://localhost:4000
         ```
+
+        * **`VITE_BACKEND_URL`**:  The URL of your backend server.  For development, this is often `http://localhost:4000`.  For production, this will be the URL of your deployed backend.
+
+* **Important:** Keep your `.env` file secure and do not commit it to your repository. Add `.env` to your `.gitignore` file.
 
     * **Important:** Keep your `.env` file secure and do not commit it to your repository. Add `.env` to your `.gitignore` file.
 
@@ -75,11 +93,3 @@ To get Imagify up and running on your local machine, follow these steps:
 
     * Open your browser and navigate to the frontend URL (e.g., `http://localhost:5173`).
 
-## 🤝 Contributing
-
-Contributions are welcome! If you'd like to contribute, please follow these steps:
-
-1.  Fork the repository.
-2.  Create a new branch for your feature or bug fix.
-3.  Make your changes.
-4.  Submit a pull request.
